@@ -13,6 +13,11 @@ RUN pip install --no-cache-dir \
     streamlit \
     pandas \
     numpy \
-    pdf2docx
+    pdf2docx \
+    pypdf \
+    langchain-openai \
+    langchain-core \
+    langchain-community \
+    langchain-text-splitters
 
-ENTRYPOINT [ "streamlit", "run", "/src/app.py" ]
+ENTRYPOINT [ "streamlit", "run", "/app/app.py" ]
